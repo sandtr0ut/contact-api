@@ -2,32 +2,72 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Contact Form</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
         integrity="sha256-ujE/ZUB6CMZmyJSgQjXGCF4sRRneOimQplBVLu8OU5w=" crossorigin="anonymous" />
-    <link href="css/style.js" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ==================CONTACT SECTION======================= -->
+    <!-- ==================INTRO SECTION======================= -->
 
-    <section class="section columns is-centered" id="connect">
+    <section>
+        <nav class="navbar is-transparent">
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable is-light">
+                        <a class="navbar-link is-light"></a>
+
+                        <div class="navbar-dropdown is-boxed is-light">
+                            <a class="navbar-item is-light" href="#particle-container">
+                                Home
+                            </a>
+                            <a class="navbar-item" href="#profile">
+                                Contact Form
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <p class="control">
+                            <!-- TODO:  Add functionality to download spreadsheet/contact-list -->
+                            <a class="button is-primary" href="#" target="_blank">
+                                <span class="icon">
+                                    <i class="far fa-arrow-alt-circle-down"></i>
+                                </span>
+                                <span>Download</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    <!-- ==================CONTACT FORM SECTION======================= -->
+
+    <section class="section columns is-centered has-background-dark has-text-white" id="connect">
         <div class="column is-8-desktop is-10-tablet">
             <h1 class="title is-size-2-desktop is-size-2-tablet is-size-4-mobile is-family-secondary is-marginless 
-                    has-text-white has-text-centered">
-                letsConnect()</h1>
-
+                        has-text-white has-text-centered">
+                Contact Form</h1>
             <p
                 class="subtitle has-text-white is-size-4-desktop is-size-4-tablet is-size-6-mobile has-text-centered is-marginless">
-                Let me know what you are working on.
+                Add a new contact to the database.
             </p>
-            <p class="subtitle has-text-white is-size-4-desktop is-size-4-tablet is-size-6-mobile has-text-centered">
-                I would love to connect and see if I can help!
-            </p>
-
             <div class="field">
                 <label class="label">Name</label>
                 <div class="control has-icons-left">
@@ -88,7 +128,103 @@
     </section>
 
 
+    <!-- ==================CONTACT LIST SECTION======================= -->
+
+    <section id="profile">
+        <div class="has-background-white has-text-centered">
+            <h1
+                class="title has-text-navy-steel is-family-secondary is-size-1-desktop is-size-2-tablet is-size-4-mobile">
+                Contact List
+            </h1>
+        </div>
+        <div class="tile is-ancestor is-vertical profile has-background-white columns">
+            <div class="tile is-10 column is-offset-1 is-vertical is-parent">
+                <div class="tile is-child box has-text-centered" id="probox1">
+                    <p class="is-size-4-desktop is-size-5-tablet is-size-6-mobile">Current List of All Contacts in the
+                        Database:</p>
+                </div>
+
+            </div>
+            <div class="tile is-10 column is-offset-1 is-parent">
+                <div class="tile is-child box">
+                    <div class="columns">
+                        <div class="backend is-size-5 column">
+                            <ul>
+                                <li>
+                                    <h3>Contact 1</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 2</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 3</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 4</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 5</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 6</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 7</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 8</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 9</h2>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="frontend is-size-5 column">
+                            <ul>
+                                <li>
+                                    <h3>Contact 10</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 11</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 12</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 13</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 14</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 15</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 16</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 17</h2>
+                                </li>
+                                <li>
+                                    <h3>Contact 18</h2>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
     <script src="https://kit.fontawesome.com/f191487f30.js"></script>
+    <script src="js/nav.js"></script>
     <script src="js/view.js"></script>
     <!-- <script src="js/nav.js"></script> -->
 
